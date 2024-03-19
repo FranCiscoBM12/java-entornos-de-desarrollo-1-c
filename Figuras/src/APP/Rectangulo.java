@@ -1,3 +1,4 @@
+package APP;
 
 import java.util.*;
 
@@ -25,9 +26,13 @@ public class Rectangulo {
     /**
      * @return
      */
+    public void Rectangulo(int Base, int Altura) {
+        // TODO implement here
+    }
+    
     private int getBase() {
         // TODO implement here
-        return 0;
+        return this.base;
     }
 
     /**
@@ -35,14 +40,16 @@ public class Rectangulo {
      */
     public void setBase(int Base) {
         // TODO implement here
+    	this.base=base;
     }
 
     /**
      * @return
      */
+    
     public int getAltura() {
         // TODO implement here
-        return 0;
+        return this.altura;
     }
 
     /**
@@ -50,22 +57,26 @@ public class Rectangulo {
      */
     public void setAltura(int Altura) {
         // TODO implement here
+    	this.altura=altura;
     }
 
     /**
      * @param Base 
      * @param Altura
      */
-    public void Rectangulo(int Base, int Altura) {
-        // TODO implement here
-    }
+    
 
     /**
      * @return
      */
     public int getArea() {
         // TODO implement here
-        return 0;
+        return this.altura * this.base;
     }
-
+    
+    public int getPerimetro() {
+    	return 0;
+    }
+    
+    
 }
