@@ -1,12 +1,13 @@
 package util;
 
 public abstract class Algoritmos {
-	/**
-	 * 
-	 * @param n
-	 * @return devuelve el numero fibonacci de n
-	 */
-	public static int fibonacci(int n) {
+/**
+ * 	
+ * @param n
+ * @return 	devuelve el número de fibonacci de n
+ */
+
+public static int fibonacci(int n) {
         if (n <= 1) {
             return n;
         } else {
@@ -21,6 +22,5 @@ public abstract class Algoritmos {
             return b;
         }
         }
-	
-	
+
 }
