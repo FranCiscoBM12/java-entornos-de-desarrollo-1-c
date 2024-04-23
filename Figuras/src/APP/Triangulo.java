@@ -1,15 +1,19 @@
+package APP;
+
 
 import java.util.*;
 
 /**
  * 
  */
-public class Triangulo {
+public class Triangulo extends Figura {
 
     /**
      * Default constructor
+     * @param j 
+     * @param i 
      */
-    public Triangulo() {
+    public Triangulo(int i, int j) {
     }
 
     /**
@@ -25,10 +29,7 @@ public class Triangulo {
     /**
      * @return
      */
-    public double getArea() {
-        // TODO implement here
-        return 0.0;
-    }
+    
 
     /**
      * @param Base 
@@ -36,6 +37,8 @@ public class Triangulo {
      */
     public void Triangulo(int Base, int Altura) {
         // TODO implement here
+    	this.altura=1;
+    	this.base=1;
     }
 
     /**
@@ -51,6 +54,7 @@ public class Triangulo {
      */
     public void setBase(int Base) {
         // TODO implement here
+    	this.base=base;
     }
 
     /**
@@ -66,14 +70,20 @@ public class Triangulo {
      */
     public void setAltura(int Altura) {
         // TODO implement here
+    	this.altura=altura;
     }
 
-    /**
-     * @return
-     */
-    public double getPerimetro() {
-        // TODO implement here
-        return 0.0;
-    }
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return this.base*this.altura;
+	}
 
+	@Override
+	public double perimetro() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+    
+   
 }

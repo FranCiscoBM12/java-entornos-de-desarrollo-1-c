@@ -1,3 +1,5 @@
+package APP;
+
 
 import java.util.*;
 
@@ -8,8 +10,9 @@ public class Circulo {
 
     /**
      * Default constructor
+     * @param i 
      */
-    public Circulo() {
+    public Circulo(int i) {
     }
 
     /**
@@ -22,6 +25,7 @@ public class Circulo {
      */
     public void circulo(int radio) {
         // TODO implement here
+    	this.radio=1;
     }
 
     /**
@@ -29,7 +33,7 @@ public class Circulo {
      */
     public int getRadio() {
         // TODO implement here
-        return 0;
+        return this.radio;
     }
 
     /**
@@ -37,22 +41,19 @@ public class Circulo {
      */
     public void setRadio(int radio) {
         // TODO implement here
+    	this.radio=radio;
     }
 
     /**
      * @return
      */
-    public int getArea() {
+    public double getArea() {
         // TODO implement here
-        return 0;
+        return 2*(Math.PI*radio);
     }
 
     /**
      * @return
      */
-    public int getPerimetro() {
-        // TODO implement here
-        return 0;
-    }
-
+    
 }

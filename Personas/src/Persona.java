@@ -41,7 +41,6 @@ public class Persona {
     public void Persona(String dni, String nombre, String apellidos, int Edad) {
         // TODO implement here
     }
-
     /**
      * @return Devuelve el DNI
      */
